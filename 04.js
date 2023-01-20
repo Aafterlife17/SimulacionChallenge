@@ -14,8 +14,17 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
-}
+  var numero1 = num.toString();
+  var numero2 = numero1.split('').reverse().join('');
 
+  if (numero1 === numero2){
+    return true;
+  } else {
+    return false;
+  }
+
+
+}
 // No modifiques nada debajo de esta linea //
 
 module.exports = numeroSimetrico
